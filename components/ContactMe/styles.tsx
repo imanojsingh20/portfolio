@@ -6,6 +6,12 @@ export const ContactMeSection = styled.section`
         display: block;
     }
 
+    h3 {
+        a {
+            font-style: italic;
+        }
+    }
+
     input,
     textarea {
         border: none;
@@ -22,11 +28,17 @@ export const ContactMeSection = styled.section`
         background: #fff;
         border: none;
         outline: none;
-        padding: 0.5rem;
+        padding: 0.5rem 2rem;
         font-weight: bold;
+        display: block;
+        margin-left: auto;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
     }
 
     @media only screen and (max-width: 768px) {
-        padding: 1rem;
+        margin: 2rem 0;
+        padding: 0;
     }
 `;

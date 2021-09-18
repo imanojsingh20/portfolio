@@ -17,6 +17,8 @@ export const themeDark = {
         textSecondary: '#949495',
         background: '#151515',
         backgroundSecondary: 'rgba(32,32,34,1)',
+        success: 'rgb(56, 142, 60)',
+        error: 'rgb(211, 47, 47)',
     },
 };
 

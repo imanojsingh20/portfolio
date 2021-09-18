@@ -18,8 +18,10 @@ export const Container = styled.div`
     margin: auto;
     flex-wrap: wrap;
     gap: 5rem;
+    padding: 1rem;
 
     @media only screen and (max-width: 768px) {
         gap: 1rem;
+        flex-direction: column;
     }
 `;

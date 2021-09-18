@@ -27,8 +27,6 @@ export const AboutMeWrapper = styled.div`
     }
 
     @media only screen and (max-width: 768px) {
-        padding: 1rem;
-
         .info {
             h1 {
                 font-size: 2.5rem;
