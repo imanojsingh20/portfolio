@@ -25,7 +25,7 @@ const data = [
         color: '#023047',
     },
     {
-        about: 'Places I wanna vist?',
+        about: 'Places I wanna visit?',
         fact: 'Tomorrowland music fest and maybe Tokyo',
         color: '#023047',
     },

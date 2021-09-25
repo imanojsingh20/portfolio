@@ -2,7 +2,7 @@ const data = [
     {
         tag: ['ReactJs'],
         title: 'GoodWorker',
-        desc: 'PWA, focus on emplowering blue collar jobs in India',
+        desc: 'PWA, focus on empowering blue collar jobs in India',
         link: 'https://www.goodworker.in/',
     },
     {
