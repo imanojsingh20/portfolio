@@ -18,6 +18,7 @@ export const AboutMeWrapper = styled.div`
         p {
             color: ${({ theme }) => theme.colors.textSecondary};
             line-height: 1.8;
+            margin: 2rem 0;
 
             span {
                 color: ${({ theme }) => theme.colors.textPrimary};

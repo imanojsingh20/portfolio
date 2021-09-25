@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { MouseEvent, useCallback, useState } from 'react';
 import RectangleCard from '../RectangleCard';
 import { ProjectSection } from './styles';
 import data from './constant';
 
 const Projects = () => {
+    const [hovered, setHovered] = useState('');
+
+    const handleHover = useCallback((e) => {
+        setHovered(e);
+    }, []);
+
     return (
         <ProjectSection id='projects'>
             <h2>Projects</h2>
             {data.map(({ tag, desc, link, title }) => (
-                <RectangleCard key={title} tag={tag} title={title} desc={desc} link={link} />
+                <RectangleCard
+                    handleHover={handleHover}
+                    key={title}
+                    tag={tag}
+                    title={title}
+                    desc={desc}
+                    link={link}
+                    fade={(hovered && hovered !== title) || false}
+                />
             ))}
         </ProjectSection>
     );

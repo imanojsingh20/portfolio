@@ -28,8 +28,10 @@ export const GlobalStyle = createGlobalStyle<{
     theme: Theme;
 }>`
     * {
+        margin: 0;
+        padding: 0;
         scroll-behavior: smooth;
-    box-sizing: border-box;
+        box-sizing: border-box;
 
     }
     

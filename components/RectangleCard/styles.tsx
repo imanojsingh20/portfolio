@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
-export const RectangleCardWrapper = styled.a`
+interface RectangleCardWrapperProps {
+    fade: boolean;
+}
+
+export const RectangleCardWrapper = styled.a<RectangleCardWrapperProps>`
     display: block;
     background: ${({ theme }) => theme.colors.backgroundSecondary};
     padding: 2rem;
     margin-bottom: 0.5rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    opacity: ${({ fade }) => fade && 0.5};
 
     .tags {
         display: flex;
@@ -14,7 +19,8 @@ export const RectangleCardWrapper = styled.a`
     }
 
     h1 {
-        line-height: 0.5;
+        line-height: 1;
+        margin: 1rem auto;
         font-weight: normal;
     }
 

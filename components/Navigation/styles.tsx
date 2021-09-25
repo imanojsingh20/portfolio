@@ -5,7 +5,7 @@ interface TitleProps {
 }
 
 export const NavigationWrapper = styled.ul`
-    margin-top: 5rem;
+    padding: 2rem;
     list-style: none;
 
     @media only screen and (max-width: 768px) {

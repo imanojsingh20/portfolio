@@ -5,6 +5,10 @@ export const RightScrolableSectionElement = styled.div`
 
     section {
         padding-top: 5rem;
+
+        h2 {
+            padding-bottom: 1rem;
+        }
     }
 
     @media only screen and (max-width: 768px) {
