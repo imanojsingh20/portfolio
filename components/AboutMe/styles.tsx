@@ -7,7 +7,7 @@ export const AboutMeWrapper = styled.div`
 
     .info {
         h1 {
-            font-size: 4rem;
+            font-size: 6.4rem;
             line-height: 1.1;
 
             span {
@@ -30,7 +30,7 @@ export const AboutMeWrapper = styled.div`
     @media only screen and (max-width: 768px) {
         .info {
             h1 {
-                font-size: 2.5rem;
+                font-size: 4rem;
             }
         }
     }
