@@ -68,7 +68,7 @@ const ContactMe = () => {
             <form onSubmit={onFormSubmit} action='https://submit-form.com/qvFIxCta'>
                 <label htmlFor='name'>`Are you Jack ? But I don&apos;t know any jack : then who`</label>
                 <input type='text' id='name' name='name' placeholder='Jack' value={name} onChange={(e) => setName(e.target.value)} required />
-                <label htmlFor='email'>We still using email for work things ? Dayam...</label>
+                <label htmlFor='email'>We still using emails? Dayam...</label>
                 <input
                     type='email'
                     id='email'

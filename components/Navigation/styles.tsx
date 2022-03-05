@@ -14,7 +14,7 @@ export const NavigationWrapper = styled.ul`
 `;
 
 export const NavItem = styled.li<TitleProps>`
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     a {
         display: inline-flex;
         justify-content: flex-start;
@@ -28,7 +28,7 @@ export const NavItem = styled.li<TitleProps>`
             display: inline-block;
             margin: auto;
             transition: all 0.5s;
-            width: ${({ isActive }) => (isActive ? '50px' : '25px')};
+            width: ${({ isActive }) => (isActive ? '100px' : '50px')};
         }
     }
 `;

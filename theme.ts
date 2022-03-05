@@ -32,7 +32,13 @@ export const GlobalStyle = createGlobalStyle<{
         padding: 0;
         scroll-behavior: smooth;
         box-sizing: border-box;
+    }
 
+    html {
+        font-size:62.5% ;
+
+
+      
     }
     
   body {
@@ -41,6 +47,13 @@ export const GlobalStyle = createGlobalStyle<{
     background-color: ${({ theme }) => theme.colors.background};
     color:${({ theme }) => theme.colors.textPrimary};
     font-family: 'Roboto Mono', monospace;
+    font-size:1.6rem;
+
+
+    @media only screen and (max-width: 768px) {
+
+    font-size:1.4rem;
+    }
   }
 
   a {

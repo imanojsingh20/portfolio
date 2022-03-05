@@ -4,7 +4,7 @@ interface RectangleCardWrapperProps {
     fade: boolean;
 }
 
-export const RectangleCardWrapper = styled.a<RectangleCardWrapperProps>`
+export const RectangleCardWrapper = styled.div<RectangleCardWrapperProps>`
     display: block;
     background: ${({ theme }) => theme.colors.backgroundSecondary};
     padding: 2rem;
@@ -36,5 +36,12 @@ export const RectangleCardWrapper = styled.a<RectangleCardWrapperProps>`
         &:hover {
             transform: none;
         }
+
+        h1 {
+            line-height: 1;
+            margin: 0.5rem auto;
+        }
+
+        padding: 1.5rem;
     }
 `;

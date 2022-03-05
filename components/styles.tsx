@@ -15,7 +15,7 @@ export const StickyWrapper = styled.div`
 
 export const Container = styled.div`
     display: flex;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: auto;
     flex-wrap: wrap;
     gap: 5rem;

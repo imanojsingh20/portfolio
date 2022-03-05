@@ -4,7 +4,10 @@ export interface IProps {
     title: string;
     desc: string;
     tag: string[];
-    link: string;
+    link: {
+        external: boolean;
+        url: string;
+    };
     handleHover: (e: any) => void;
     fade: boolean;
 }

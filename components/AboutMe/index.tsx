@@ -11,11 +11,10 @@ const AboutMe = () => {
                 </h1>
                 <p>
                     I’m a <span>Fullstack Software Engineer</span> working on Front-End Experiences at <span>GoodWorker</span>. I am currently located
-                    in <span>Delhi NCR, India</span>. I love to play Volleyball and video games.
+                    in <span>Delhi NCR, India</span>. I love to play Volleyball and video games. Let&apos;s connect sometime and play!!
                 </p>
-
-                <Navigation />
             </div>
+            <Navigation />
 
             <SocialLinks />
         </AboutMeWrapper>
