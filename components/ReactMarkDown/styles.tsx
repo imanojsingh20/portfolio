@@ -33,8 +33,8 @@ export const ReactMarkdownStyled = styled(ReactMarkdown)<Options>`
         color: #f4f4f4;
     }
 
-    h1,
-    h2 {
+    h1:not(:first-child),
+    h2:not(:first-child) {
         text-decoration: underline;
         padding-bottom: 1rem;
         padding-top: 3rem;
@@ -46,5 +46,9 @@ export const ReactMarkdownStyled = styled(ReactMarkdown)<Options>`
         border-left: 0.5em #eee solid;
         padding: 1rem 0;
         padding-left: 3em;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 1rem 0;
     }
 `;
