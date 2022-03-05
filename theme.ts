@@ -35,26 +35,17 @@ export const GlobalStyle = createGlobalStyle<{
     }
 
     html {
-        font-size:62.5% ;
-
-
-      
+        font-size: 62.5%;
     }
     
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: ${({ theme }) => theme.colors.background};
-    color:${({ theme }) => theme.colors.textPrimary};
-    font-family: 'Roboto Mono', monospace;
-    font-size:1.6rem;
-
-
-    @media only screen and (max-width: 768px) {
-
-    font-size:1.4rem;
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: ${({ theme }) => theme.colors.background};
+        color:${({ theme }) => theme.colors.textPrimary};
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.6rem;
     }
-  }
 
   a {
       text-decoration: none;

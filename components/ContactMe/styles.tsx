@@ -20,7 +20,7 @@ export const ContactMeSection = styled.section`
         width: 100%;
         margin: 1rem 0;
         resize: vertical;
-        font-size: 1rem;
+        font-size: 1.6rem;
         box-sizing: border-box;
     }
 
@@ -32,7 +32,7 @@ export const ContactMeSection = styled.section`
         font-weight: bold;
         display: block;
         margin-left: auto;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         margin-bottom: 0.5rem;
         cursor: pointer;
     }
