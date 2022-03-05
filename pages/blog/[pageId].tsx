@@ -4,7 +4,7 @@ import { PostConfig, posts } from '../../constants/posts';
 import { GetStaticProps } from 'next';
 import ReactMarkDown from '../../components/ReactMarkDown';
 import Head from 'next/head';
-import { BlogPagerWrapper } from './styles';
+import { BlogPagerWrapper } from '../../components/Blog/styles';
 
 const BlogPage: React.FC<{ markdown: string; pageConfig: PostConfig }> = ({ markdown, pageConfig }) => {
     return (
