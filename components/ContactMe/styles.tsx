@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ContactMeSection = styled.section`
-    height: calc(100vh - 5rem);
     label {
         display: block;
     }
