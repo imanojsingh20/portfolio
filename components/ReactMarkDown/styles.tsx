@@ -3,7 +3,7 @@ import ReactMarkdown, { Options } from 'react-markdown';
 
 export const ReactMarkdownStyled = styled(ReactMarkdown)<Options>`
     padding: 5rem 0;
-    color: #c9d1d9;
+    color: #dce1e6;
     img {
         width: 100%;
     }
@@ -15,7 +15,7 @@ export const ReactMarkdownStyled = styled(ReactMarkdown)<Options>`
     }
 
     p {
-        padding: 0.5rem 0;
+        padding: 1rem 0;
     }
 
     a {

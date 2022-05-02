@@ -8,6 +8,15 @@ const data = [
             url: '/blog/solid-principles',
         },
     },
+    {
+        tag: ['Frontend', 'Micro Frontend'],
+        title: 'Micro Frontend Architecture',
+        desc: 'An architectural style where independently deliverable frontend applications are composed into a greater whole',
+        link: {
+            external: false,
+            url: '/blog/micro-frontend-architecture',
+        },
+    },
 ];
 
 export default data;
