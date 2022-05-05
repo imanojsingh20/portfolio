@@ -1,6 +1,6 @@
 const data = [
     {
-        tag: ['ReactJs'],
+        tag: ['TypeScript', 'ReactJs', 'GraphQL'],
         title: 'GoodWorker',
         desc: 'PWA, focus on empowering blue collar jobs in India',
         link: {
@@ -9,16 +9,16 @@ const data = [
         },
     },
     {
-        tag: ['NextJS', 'Express'],
-        title: 'Maido',
-        desc: 'Multi-user blogging platform front and back, where users can signup and post articles.',
+        tag: ['ReactJs', 'Express', 'MongoDB'],
+        title: 'Corte | Url Shortener',
+        desc: 'Corte means cut in spanish, this is how Corte came up. ',
         link: {
             external: true,
-            url: 'https://article-nextjs.vercel.app',
+            url: 'https://corte.manojsingh.tech/',
         },
     },
     {
-        tag: ['ReactJs', 'Express'],
+        tag: ['ReactJs', 'Express', 'PostgreSQL'],
         title: 'MakeMyTrip Clone',
         desc: 'Full functional MMT flights clone front and back, with payment integration and flight seat selection.',
         link: {
