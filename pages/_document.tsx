@@ -52,6 +52,20 @@ export default class MyDocument extends Document {
                         crossOrigin='anonymous'
                         referrerPolicy='no-referrer'
                     />
+
+                    <script async src={`https://www.googletagmanager.com/gtag/js?id=G-7D9SFR0ZVJ`} />
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+                                gtag('config', 'G-7D9SFR0ZVJ', {
+                                page_path: window.location.pathname,
+                                });
+                            `,
+                        }}
+                    />
                 </Head>
                 <body>
                     <Main />
