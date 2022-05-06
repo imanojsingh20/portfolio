@@ -13,7 +13,7 @@ const Blog = () => {
 
     return (
         <ProjectSection id='blog'>
-            <h2>Blog</h2>
+            <h2 className='section-title'>Blog</h2>
             {data.map(({ tag, desc, link, title }) => (
                 <RectangleCard
                     handleHover={handleHover}

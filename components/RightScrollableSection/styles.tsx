@@ -19,6 +19,14 @@ export const RightScrolableSectionElement = styled.div`
         section {
             padding-top: 1rem;
 
+            .section-title {
+                position: sticky;
+                top: 0;
+                background: #151515;
+                padding: 1rem 0;
+                z-index: 1;
+            }
+
             &:last-child {
                 height: inherit;
                 padding-bottom: 5rem;

@@ -12,7 +12,7 @@ const Projects = () => {
 
     return (
         <ProjectSection id='projects'>
-            <h2>Projects</h2>
+            <h2 className='section-title'>Projects</h2>
             {data.map(({ tag, desc, link, title }) => (
                 <RectangleCard
                     handleHover={handleHover}
