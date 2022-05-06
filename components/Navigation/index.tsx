@@ -6,12 +6,14 @@ import Link from 'next/link';
 
 type Sections = typeof SECTIONS;
 
+const navItems = Object.keys(SECTIONS);
+
 const Navigation = () => {
-    const [activeSection, setActiveSection] = useState<string>(SECTIONS['projects']);
+    const [activeSection, setActiveSection] = useState<string>(SECTIONS[navItems[0] as keyof Sections]);
     const router = useRouter();
 
     useEffect(() => {
-        const path = Object.keys(SECTIONS).find((key) => SECTIONS[key as keyof Sections] === router.asPath.replace('/', ''));
+        const path = navItems.find((key) => SECTIONS[key as keyof Sections] === router.asPath.replace('/', ''));
 
         if (path) {
             setActiveSection(SECTIONS[path as keyof Sections]);
@@ -20,7 +22,7 @@ const Navigation = () => {
 
     return (
         <NavigationWrapper>
-            {Object.keys(SECTIONS).map((navItem, index) => (
+            {navItems.map((navItem, index) => (
                 <NavItem
                     key={navItem}
                     onClick={(e) => setActiveSection(SECTIONS[navItem as keyof Sections])}
