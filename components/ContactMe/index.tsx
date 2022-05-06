@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react';
-import SnackBar from '../SnackBar';
+import { toast } from 'react-toastify';
 import { ContactMeSection } from './styles';
 
 const FORMSPARK_ACTION_URL = 'https://submit-form.com/qvFIxCta';
@@ -9,11 +9,6 @@ const ContactMe = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
-
-    const [notification, setNotification] = useState({
-        message: '',
-        type: '',
-    });
 
     const clearInputs = () => {
         setEmail('');
@@ -28,7 +23,7 @@ const ContactMe = () => {
         try {
             setLoading(true);
 
-            await fetch(FORMSPARK_ACTION_URL, {
+            const sendCall = fetch(FORMSPARK_ACTION_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -41,19 +36,17 @@ const ContactMe = () => {
                 }),
             });
 
-            clearInputs();
-
-            setNotification({
-                message: 'Message Sent!',
-                type: 'success',
+            await toast.promise(sendCall, {
+                pending: 'Sending Message!',
+                success: 'Message Sent!',
+                error: 'Something Went Wrong!',
             });
+
+            clearInputs();
         } catch (error) {
             setLoading(false);
 
-            setNotification({
-                message: 'Something Went Wrong!',
-                type: 'error',
-            });
+            toast.error('Something Went Wrong!');
         }
     };
 
@@ -95,8 +88,6 @@ const ContactMe = () => {
                 ) : (
                     <button type='submit'>Send</button>
                 )}
-
-                {notification && <SnackBar message={notification.message} type={notification.type} />}
             </form>
         </ContactMeSection>
     );

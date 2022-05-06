@@ -51,4 +51,8 @@ export const GlobalStyle = createGlobalStyle<{
       text-decoration: none;
       color:${({ theme }) => theme.colors.textPrimary};
   }
+
+  .Toastify__close-button {
+    align-self: center !important;
+    }
 `;

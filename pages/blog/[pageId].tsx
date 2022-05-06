@@ -6,6 +6,8 @@ import ReactMarkDown from '../../components/ReactMarkDown';
 import Head from 'next/head';
 import { BlogPagerWrapper } from '../../components/Blog/styles';
 
+import BreadCrumb from '../../components/BreadCrumb';
+
 const BlogPage: React.FC<{ markdown: string; pageConfig: PostConfig }> = ({ markdown, pageConfig }) => {
     return (
         <>
@@ -14,6 +16,7 @@ const BlogPage: React.FC<{ markdown: string; pageConfig: PostConfig }> = ({ mark
             </Head>
             <Container>
                 <BlogPagerWrapper>
+                    <BreadCrumb />
                     <ReactMarkDown skipHtml>{markdown}</ReactMarkDown>
                 </BlogPagerWrapper>
             </Container>
