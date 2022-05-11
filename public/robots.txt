@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.manojsingh.tech
+
+# Sitemaps
+Sitemap: https://www.manojsingh.tech/sitemap.xml
