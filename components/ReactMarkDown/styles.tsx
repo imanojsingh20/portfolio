@@ -48,6 +48,13 @@ export const ReactMarkdownStyled = styled(ReactMarkdown)<Options>`
         padding-left: 3em;
     }
 
+    pre {
+        overflow-x: auto;
+
+        > div {
+            width: calc(100vw - 2rem);
+        }
+    }
     @media only screen and (max-width: 768px) {
         padding: 1rem 0;
     }
