@@ -22,6 +22,12 @@ export const RectangleCardWrapper = styled.div<RectangleCardWrapperProps>`
         line-height: 1;
         margin: 1.5rem auto;
         font-weight: normal;
+        overflow: hidden;
+        font-weight: normal;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 
     .desc {
