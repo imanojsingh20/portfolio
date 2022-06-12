@@ -13,6 +13,7 @@ export const BreadCrumbStyled = styled.ul`
 
     a {
         text-decoration: underline;
+        text-transform: lowercase;
     }
 
     li:last-child {

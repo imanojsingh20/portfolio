@@ -37,7 +37,7 @@ const BreadCrumb = () => {
                 <span>&#60;</span>
                 <li>
                     <Link href={getHref(path, crumbs, index + 1)}>
-                        <a>{path.replace('-', ' ')}</a>
+                        <a>{path.replace(/-/g, ' ')}</a>
                     </Link>
                 </li>
             </React.Fragment>
