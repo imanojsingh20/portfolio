@@ -50,12 +50,15 @@ export const ReactMarkdownStyled = styled(ReactMarkdown)<Options>`
 
     pre {
         overflow-x: auto;
-
-        > div {
-            width: calc(100vw - 2rem);
-        }
     }
+
     @media only screen and (max-width: 768px) {
         padding: 1rem 0;
+
+        pre {
+            > div {
+                width: calc(100vw - 2rem);
+            }
+        }
     }
 `;
