@@ -10,8 +10,14 @@ const AboutMe = () => {
                     Hello, I’m <span>Manoj Singh.</span>
                 </h1>
                 <p>
-                    I’m a <span>Fullstack Software Engineer</span> working on Front-End Experiences at <span>GoodWorker</span>. I am currently located
-                    in <span>Delhi NCR, India</span>. I love to play Volleyball and video games. Let&apos;s connect sometime and play!!
+                    I’m a <span>Fullstack Software Engineer</span> working on Front-End Experiences at{' '}
+                    <span>
+                        <a href='https://www.affinidi.com/' target='_blank' rel='noopener noreferrer'>
+                            Affinidi India
+                        </a>
+                    </span>
+                    . I am currently located in <span>Bangalore, India</span>.
+                    <div>I love to play Volleyball and video games. Let&apos;s connect sometime and play!!</div>
                 </p>
             </div>
             <Navigation />
