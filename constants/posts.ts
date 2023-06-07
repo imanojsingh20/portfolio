@@ -1,12 +1,12 @@
 export const posts = [
     {
         pageId: 'mfe-react-webpack-federation',
-        url: 'https://raw.githubusercontent.com/blackhatplay/mfe-example/master/mfe-react-webpack.md',
+        url: 'https://raw.githubusercontent.com/imanojsingh20/mfe-example/master/mfe-react-webpack.md',
         title: 'Getting started with Micro-Frontend and Webpack 5 Module Federation',
     },
     {
         pageId: 'micro-frontend-architecture',
-        url: 'https://raw.githubusercontent.com/blackhatplay/mfe-guide/master/readme.md',
+        url: 'https://raw.githubusercontent.com/imanojsingh20/mfe-guide/master/readme.md',
         title: 'Micro Frontend Architecture',
     },
     {
@@ -16,4 +16,4 @@ export const posts = [
     },
 ];
 
-export type PostConfig = typeof posts[0];
+export type PostConfig = (typeof posts)[0];

@@ -1,7 +1,7 @@
 const data = [
     {
         title: 'GitHub',
-        link: 'https://github.com/blackhatplay',
+        link: 'https://github.com/imanojsingh20',
         icon: 'fab fa-github',
     },
     {
