@@ -4,7 +4,7 @@ import Image from 'next/image';
 const SocialLinks = () => {
     return (
         <SocialWrapper>
-            <Image className='avatar' width={16 * 3} height={16 * 3} src='https://avatars.githubusercontent.com/blackhatplay' alt='' />
+            <Image className='avatar' width={16 * 3} height={16 * 3} src='https://avatars.githubusercontent.com/imanojsingh20' alt='' />
             <div className='links'>
                 {data.map(({ title, icon, link }) => (
                     <div key={title}>
