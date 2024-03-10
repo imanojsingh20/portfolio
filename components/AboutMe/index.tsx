@@ -12,8 +12,8 @@ const AboutMe = () => {
                 <p>
                     I’m a <span>Fullstack Software Engineer</span> working on Front-End Experiences at{' '}
                     <span>
-                        <a href='https://www.affinidi.com/' target='_blank' rel='noopener noreferrer'>
-                            Affinidi India
+                        <a href='https://corp.rakuten.co.in/' target='_blank' rel='noopener noreferrer'>
+                            Rakuten India
                         </a>
                     </span>
                     . I am currently located in <span>Bangalore, India</span>.
