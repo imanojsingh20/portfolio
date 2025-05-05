@@ -1,9 +1,9 @@
-import React, { MouseEvent, useCallback, useState } from 'react';
-import RectangleCard from '../RectangleCard';
+import React, { useCallback, useState } from 'react';
 import { ProjectSection } from './styles';
 import data from './constant';
+import SkillsSection from './SkillsSection';
 
-const Projects = () => {
+const Skills = () => {
     const [hovered, setHovered] = useState('');
 
     const handleHover = useCallback((e) => {
@@ -11,16 +11,14 @@ const Projects = () => {
     }, []);
 
     return (
-        <ProjectSection id='projects'>
-             <h2 className='section-title'>Work/Projects</h2>
-            {data.map(({ tag, desc, link, title }) => (
-                <RectangleCard
+        <ProjectSection id='skills'>
+             <h2 className='section-title'>Skills</h2>
+            {data.map(({ title, items }) => (
+                <SkillsSection
                     handleHover={handleHover}
                     key={title}
-                    tag={tag}
                     title={title}
-                    desc={desc}
-                    link={link}
+                    skills={items}
                     fade={(hovered && hovered !== title) || false}
                 />
             ))}
@@ -28,4 +26,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Skills;

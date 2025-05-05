@@ -19,7 +19,6 @@ export const RectangleCardWrapper = styled.div<RectangleCardWrapperProps>`
     }
 
     h1 {
-        line-height: 1;
         margin: 1.5rem auto;
         font-weight: normal;
         overflow: hidden;

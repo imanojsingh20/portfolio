@@ -6,7 +6,7 @@ const data = [
     },
     {
         title: 'LinkedIn',
-        link: 'https://www.linkedin.com/in/manojsingh9290/',
+        link: 'https://www.linkedin.com/in/imanojsingh20/',
         icon: 'fab fa-linkedin',
     },
     {

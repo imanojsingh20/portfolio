@@ -1,5 +1,14 @@
 const data = [
     {
+        tag: ['TypeScript', 'ReactJs', 'Vue.js'],
+        title: 'Rakuten Sixthsense',
+        desc: 'SPA, Observability tool',
+        link: {
+            external: true,
+            url: 'https://sixthsense.rakuten.com/',
+        },
+    },
+    {
         tag: ['TypeScript', 'ReactJs', 'GraphQL'],
         title: 'GoodWorker',
         desc: 'PWA, focus on empowering blue collar jobs in India',

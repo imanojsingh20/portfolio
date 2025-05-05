@@ -17,7 +17,7 @@ const AboutMe = () => {
                         </a>
                     </span>
                     . I am currently located in <span>Bangalore, India</span>.
-                    <div>I love to play Volleyball and video games. Let&apos;s connect sometime and play!!</div>
+                    {/* <div>I love to play Volleyball and video games. Let&apos;s connect sometime and play!!</div> */}
                 </p>
             </div>
             <Navigation />

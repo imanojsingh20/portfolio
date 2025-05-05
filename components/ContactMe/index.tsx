@@ -2,7 +2,7 @@ import { FormEvent, useState } from 'react';
 import { toast } from 'react-toastify';
 import { ContactMeSection } from './styles';
 
-const FORMSPARK_ACTION_URL = 'https://submit-form.com/qvFIxCta';
+const FORMSPARK_ACTION_URL = 'https://submit-form.com/8EBtndDOH';
 
 const ContactMe = () => {
     const [name, setName] = useState('');
@@ -54,12 +54,12 @@ const ContactMe = () => {
         <ContactMeSection id='contact-me'>
             <h2>Contact Me</h2>
             <h3>
-                Email: <a href='mailto:mannuall4u@gmail.com'>mannuall4u@gmail.com</a>
+                Email: <a href='mailto:imanojsingh20@gmail.com'>imanojsingh20@gmail.com</a>
             </h3>
 
             <h2>Woah Woah Waoh.. Don&apos;t be rude, Drop me a Hey!</h2>
-            <form onSubmit={onFormSubmit} action='https://submit-form.com/qvFIxCta'>
-                <label htmlFor='name'>`Are you Jack ? But I don&apos;t know any jack : then who`</label>
+            <form onSubmit={onFormSubmit} action={FORMSPARK_ACTION_URL}>
+                <label htmlFor='name'>Email</label>
                 <input type='text' id='name' name='name' placeholder='Jack' value={name} onChange={(e) => setName(e.target.value)} required />
                 <label htmlFor='email'>We still using emails? Dayam...</label>
                 <input
@@ -71,7 +71,7 @@ const ContactMe = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
-                <label htmlFor='message'>What ya wanna say my friend..</label>
+                <label htmlFor='message'>Message..</label>
                 <textarea
                     rows={5}
                     id='message'
